@@ -12,16 +12,23 @@
 
 <body>
   <section>
+    <div class="announcement-bar">
+      <div class="announcement-bar-wrapper">
+        <p>Need a site?</p>
+
+      </div>
+    </div>
+  </section>
+  <section>
     <div class="flex-container">
-      <nav class="navbar navbar-expand-sm fixed-top ">
+      <nav class="navbar navbar-expand-md navbar-dark nav-remove">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="img/HH_Logo_mark-black.png" class="img-fluid" alt="HH Logo">
+            <img src="img/HH_Logo_mark-white.png" class="img-fluid" alt="Logo Here">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
@@ -40,21 +47,17 @@
           </div>
         </div>
       </nav>
-
-
       <!-- Mobile Menu -->
       <div class="mobile-menu">
         <a class="navbar-brand" href="index.html">
-          <img src="img/HH_Logo_mark-white.png" class="mobile-logo img-fluid" alt="Logo Here">
+          <img src="dist/img/HH_Logo_mark-white.png" class="img-fluid" alt="Logo Here">
         </a>
         <input id="burger" type="checkbox">
-
         <label for="burger">
           <span></span>
           <span></span>
           <span></span>
         </label>
-
         <nav class="mobile-nav">
           <ul class="mobile-links">
             <li><a href="index.html">Home</a></li>
@@ -67,12 +70,25 @@
     </div>
   </section>
 
-  <section id="hero">
-    <div class="container">
 
-
+  <section id="hero" class="hero">
+    <div class="container blanket">
+      <div class="row flex-container">
+        <div class="col-lg-12">
+          <div class="hero-text">
+            <h1 class="section-title">Haley Hankins <br> <span>Web Design</span></h1>
+          </div>
+          <!-- <div class="cta-section animated fadeIn delay-2s">
+            <a href="#work"><button type="button" class="btn btn-primary">Cool, Haley. So What's your deal?</button></a>
+          </div> -->
+        </div>
+        <!-- <div class="mobile-arrow col-lg-12 col-md-12 col-sm-12">
+          <a href="#work"><img class="animated infinite bounce delay-2s" src="src/img/down-arrow.png" alt=""></a>
+        </div> -->
+      </div>
     </div>
   </section>
+
 
 
 
