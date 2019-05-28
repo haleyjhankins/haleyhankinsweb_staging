@@ -379,7 +379,33 @@ Mobile Menu
 }
 
 
+/* About Section */
+#about {
+  width: 100%;
+}
 
+#about .about-box {
+  max-width: 100%;
+}
+
+#about .box {
+  max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    position: relative;
+    background: #252525;
+    margin: 0 auto;
+    width: 100%;
+    height: 700px;
+}
+
+#about h1 {
+  color: white;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+}
 
 
 
