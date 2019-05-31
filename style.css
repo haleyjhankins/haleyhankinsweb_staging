@@ -407,6 +407,78 @@ Mobile Menu
   font-size: 40px;
 }
 
+#work {
+
+}
+
+#work .work-row {
+  padding: 75px 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#work h3 {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  font-size: 12px;
+  color: #a39067!important;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: left;
+}
+
+#work h2 {
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  text-align: left;
+
+}
+
+#work p {
+  line-height: 1.7;
+  font-size: 15px;
+  text-align: left;
+  text-align: left;
+
+}
+
+#work hr {
+  background-color: #a39067;
+  margin-top: 20px;
+  width: 25%;
+  height: 2px;
+  border: none;
+  margin-left: 0px;
+}
+
+#work button {
+  padding: 20px 65px;
+  border-radius: 4px;
+  margin-top: 20px;
+  background-color: #a39067;
+  text-align: left;
+
+}
+
+#work a {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: 600!important;
+}
+
+#work .right-align {
+  text-align: right;
+}
+
+#work #right-align-hr {
+    margin-left: 385px;
+}
+
 
 
 /* Media Queries */
