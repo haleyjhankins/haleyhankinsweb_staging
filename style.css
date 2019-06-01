@@ -444,6 +444,10 @@ Mobile Menu
 
 }
 
+#work p span {
+  font-weight: 700;
+}
+
 #work hr {
   background-color: #a39067;
   margin-top: 20px;
@@ -454,12 +458,17 @@ Mobile Menu
 }
 
 #work button {
-  padding: 20px 65px;
-  border-radius: 4px;
   margin-top: 20px;
   background-color: #a39067;
-  text-align: left;
-
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.25rem;
 }
 
 #work a {
@@ -468,7 +477,8 @@ Mobile Menu
   text-decoration: none;
   letter-spacing: 4px;
   font-size: 14px;
-  font-weight: 600!important;
+  font-weight: 800!important;
+
 }
 
 #work .right-align {
@@ -479,6 +489,138 @@ Mobile Menu
     margin-left: 385px;
 }
 
+/* Form Section */
+/* Form */
+#form {
+  padding: 65px 0;
+  background-color: #F8F8F8;
+  text-align: center;
+}
+
+#form .section-title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#form p , .modal {
+font-family: 'Lora', serif;
+  // font-size: 20px;
+  color: #333333;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+
+#form .name-input, .modal {
+  width: 400px;
+  margin-bottom: 5px;
+  border: 1px solid #ababab;
+}
+
+#form .form-email input , .modal {
+  width: 400px;
+  margin-bottom: 5px;
+  border: 1px solid #ababab;
+}
+
+#form .form-text-area textarea , .modal {
+  width: 400px;
+  border: 1px solid #ababab;
+}
+
+#form .cta-section , .modal {
+  text-align: center;
+  margin: 50px auto 0;
+}
+
+#form .btn-primary, .modal {
+  background-color: #a39067;
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+
+
+
+/* Footer Section */
+#footer {
+  position: relative;
+  background-color: #242424;
+  width: 100%;
+  height: 100%;
+}
+
+#footer h2 {
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #EDF8FC;
+  padding-top: 70px;
+}
+
+#footer .footer-links {
+  // font-size: 18px;
+  vertical-align: top;
+  color: #EDF8FC;
+  border-top: 1px solid rgba(237,248,252,0.1);
+  font-weight: 300;
+  padding: 30px;
+  text-align: center;
+}
+
+#footer .far.fa-envelope {
+  margin-right: 10px;
+}
+
+#footer .fab.fa-github {
+  margin-right: 10px;
+}
+
+#footer .fab.fa-linkedin-in {
+  margin-right: 10px;
+}
+
+.footer-links a {
+  color: #EDF8FC;
+  height: 40px;
+  font-size: 14px;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+
+#footer .Copyright {
+  text-align: center;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  color: white;
+  padding: 30px;
+  height: 40px;
+  font-size: 8px;
+  letter-spacing: 0.125rem;
+  font-weight: 400;
+  padding-top: 45px;
+}
 
 
 /* Media Queries */
