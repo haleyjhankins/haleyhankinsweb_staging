@@ -395,15 +395,16 @@ Mobile Menu
 
 #about .box {
   max-height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2em;
-    position: relative;
-    background: #252525;
-    margin: 0 auto;
-    width: 100%;
-    height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  position: relative;
+  background: #252525;
+  margin: 0 auto;
+  width: 100%;
+  height: 700px;
+  color: #fff;
 }
 
 #about h1 {
@@ -436,7 +437,7 @@ Mobile Menu
 
 #work h2 {
   font-family: 'Lora', serif;
-  font-size: 30px;
+  font-size: 35px;
   text-align: left;
 
 }
@@ -444,7 +445,7 @@ Mobile Menu
 
 #work p {
   line-height: 1.7;
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   font-family: 'Lora', serif;
 
@@ -507,10 +508,10 @@ Mobile Menu
   margin-top: 20px;
   margin-bottom: 20px;
   font-family: 'Lora', serif;
-  font-size: 30px;
+  font-size: 35px;
   letter-spacing: 3px;
   font-weight: 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 #form p , .modal {
@@ -649,8 +650,50 @@ font-family: 'Lora', serif;
   font-size: 90px;
   font-family: "Montserrat", helvetica, sans-serif;
   text-transform: uppercase;
-  /* color: #fff; */
+  display: inline-block;
 }
+
+#about {
+}
+
+#about .work-box {
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  position: relative;
+  background: #252525;
+  margin: 0 auto;
+  width: 100%;
+  color: #fff;
+  height: 200px;
+}
+
+#about .work-box-details {
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 175px;
+  position: relative;
+  background: #252525;
+  margin: 0 auto;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+}
+
+#mobile-display {
+  background-color: #F8F8F8;
+  height: 500px;
+}
+
+#mobile-display .phone-div  {
+  text-align: center;
+  margin: 0 auto;
+}
+
 
 /* Media Queries */
 
