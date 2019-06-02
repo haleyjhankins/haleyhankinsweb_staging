@@ -477,6 +477,20 @@ Mobile Menu
   border-radius: 0.25rem;
 }
 
+#work .button-box-left {
+  display: block;
+  text-align: left;
+}
+
+#work .button-box-right {
+  display: block;
+  text-align: right;
+}
+
+#work #right-align-hr {
+    margin-left: 315px!important;
+}
+
 #work a {
   color: white;
   font-family: 'Montserrat', sans-serif;
@@ -487,7 +501,7 @@ Mobile Menu
 
 }
 
-#work .right-align {
+#work .right-aligned {
   text-align: right;
 }
 
@@ -708,11 +722,53 @@ font-family: 'Lora', serif;
 
  }
 
- /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
-
  /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+@media (max-width: 992px) {
+  #work .work-col {
+    margin-bottom: 50px;
+  }
+  #work h2, #work h3, #work p {
+    text-align: center;
+  }
+  #work hr {
+    margin-left: 37%;
+  }
+
+ }
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 60px;
+    line-height: 66px;
+    margin-top: 400px;
+  }
+  #about h1 {
+    line-height: 55px;
+    font-size: 49px;
+    text-align: center;
+  }
+  #work h2, #work h3, #work p {
+    text-align: center;
+  }
+  #work .float-left {
+    float: none;
+    margin: 0 auto;
+  }
+
+  #work hr {
+    margin-left: 37%;
+  }
+  #work .work-col {
+    margin-bottom: 50px;
+  }
+
+  #work .work-img {
+    margin: 0 auto;
+  }
+
+
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { ... }
