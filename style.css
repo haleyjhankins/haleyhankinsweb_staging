@@ -509,6 +509,10 @@ Mobile Menu
     margin-left: 385px;
 }
 
+#work .right-align-div {
+  text-align: right;
+}
+
 /* Form Section */
 /* Form */
 #form {
@@ -711,6 +715,76 @@ font-family: 'Lora', serif;
 
 /* Media Queries */
 
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+
+  #about h1 {
+    text-align: center;
+  }
+ #work .work-col {
+   margin-bottom: 50px;
+ }
+ #work h2, #work h3, #work p {
+   text-align: center;
+ }
+ #work hr {
+   margin-left: 37%;
+ }
+ #work .right-aligned {
+   text-align: center;
+ }
+ #work .button-box-right {
+  margin: 0 auto;
+  text-align: center;
+ }
+ #work #right-align-hr {
+    margin-left: 240px!important;
+}
+
+#work .button-box-left {
+    display: block;
+    text-align: center;
+}
+#work .work-row {
+  padding: 35px 15px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+ #hero h1 {
+   font-size: 60px;
+   line-height: 66px;
+   margin-top: 400px;
+ }
+ #about h1 {
+   line-height: 55px;
+   font-size: 49px;
+   text-align: center;
+ }
+ #work h2, #work h3, #work p {
+   text-align: center;
+ }
+ #work .float-left {
+   float: none;
+   margin: 0 auto;
+ }
+
+ #work hr {
+   margin-left: 37%;
+ }
+ #work .work-col {
+   margin-bottom: 50px;
+ }
+
+ #work .work-img {
+   margin: 0 auto;
+ }
+
+
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .navbar-brand {
@@ -722,50 +796,6 @@ font-family: 'Lora', serif;
 
  }
 
- /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  #work .work-col {
-    margin-bottom: 50px;
-  }
-  #work h2, #work h3, #work p {
-    text-align: center;
-  }
-  #work hr {
-    margin-left: 37%;
-  }
-
- }
-
- /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  #hero h1 {
-    font-size: 60px;
-    line-height: 66px;
-    margin-top: 400px;
-  }
-  #about h1 {
-    line-height: 55px;
-    font-size: 49px;
-    text-align: center;
-  }
-  #work h2, #work h3, #work p {
-    text-align: center;
-  }
-  #work .float-left {
-    float: none;
-    margin: 0 auto;
-  }
-
-  #work hr {
-    margin-left: 37%;
-  }
-  #work .work-col {
-    margin-bottom: 50px;
-  }
-
-  #work .work-img {
-    margin: 0 auto;
-  }
 
 
 
