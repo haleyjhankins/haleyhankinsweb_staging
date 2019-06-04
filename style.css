@@ -422,6 +422,12 @@ Mobile Menu
 
 #work .row {
   padding: 25px;
+  margin-bottom: 10px;
+}
+
+#work h2 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
 }
 
 /* #work .left {
@@ -639,6 +645,25 @@ font-family: 'Lora', serif;
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  #hero h1 {
+    font-size: 60px;
+  }
+  #about h1 {
+    text-align: center;
+    line-height: 46px;
+  }
+  #work .container {
+    padding: 30px 25px;
+  }
+  #work .row {
+    padding: 10px;
+  }
+  #work img {
+    margin-bottom: 20px;
+  }
+  #work h2 {
+    margin-bottom: 20px;
+  }
 
 }
 
