@@ -723,7 +723,7 @@ font-family: 'Lora', serif;
   font-size: 25px;
   line-height: 30px;
 }
-#form .name-input, #form .form-email-input, #form .form-text-area {
+#form .name-input, #form .form-email, #form .form-text-area {
   width: 350px;
 }
 
