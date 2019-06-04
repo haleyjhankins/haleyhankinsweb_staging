@@ -413,105 +413,7 @@ Mobile Menu
   font-size: 40px;
 }
 
-#work {
 
-}
-
-#work .work-row {
-  padding: 75px 15px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#work h3 {
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  font-size: 12px;
-  color: #a39067!important;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-align: left;
-}
-
-#work h2 {
-  font-family: 'Lora', serif;
-  font-size: 35px;
-  text-align: left;
-
-}
-
-
-#work p {
-  line-height: 1.7;
-  font-size: 18px;
-  text-align: left;
-  font-family: 'Lora', serif;
-
-}
-
-#work p span {
-}
-
-#work hr {
-  background-color: #a39067;
-  margin-top: 20px;
-  width: 25%;
-  height: 2px;
-  border: none;
-  margin-left: 0px;
-}
-
-#work button {
-  margin-top: 20px;
-  background-color: #a39067;
-  border: none;
-  color: #fff;
-  padding: 15px 40px;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 3px;
-  font-weight: 500;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 0.25rem;
-}
-
-#work .button-box-left {
-  display: block;
-  text-align: left;
-}
-
-#work .button-box-right {
-  display: block;
-  text-align: right;
-}
-
-#work #right-align-hr {
-    margin-left: 315px!important;
-}
-
-#work a {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 14px;
-  font-weight: 800!important;
-
-}
-
-#work .right-aligned {
-  text-align: right;
-}
-
-#work #right-align-hr {
-    margin-left: 385px;
-}
-
-#work .right-align-div {
-  text-align: right;
-}
 
 /* Form Section */
 /* Form */
@@ -718,72 +620,14 @@ font-family: 'Lora', serif;
 /* Large devices (desktops, 992px and up) */
 @media (max-width: 992px) {
 
-  #about h1 {
-    text-align: center;
-  }
- #work .work-col {
-   margin-bottom: 50px;
- }
- #work h2, #work h3, #work p {
-   text-align: center;
- }
- #work hr {
-   margin-left: 37%;
- }
- #work .right-aligned {
-   text-align: center;
- }
- #work .button-box-right {
-  margin: 0 auto;
-  text-align: center;
- }
- #work #right-align-hr {
-    margin-left: 240px!important;
-}
 
-#work .button-box-left {
-    display: block;
-    text-align: center;
-}
-#work .work-row {
-  padding: 35px 15px;
-  margin: 0 auto;
-  text-align: center;
-}
 
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
- #hero h1 {
-   font-size: 60px;
-   line-height: 66px;
-   margin-top: 400px;
- }
- #about h1 {
-   line-height: 55px;
-   font-size: 49px;
-   text-align: center;
- }
- #work h2, #work h3, #work p {
-   text-align: center;
- }
- #work .float-left {
-   float: none;
-   margin: 0 auto;
- }
 
- #work hr {
-   margin-left: 37%;
- }
- #work .work-col {
-   margin-bottom: 50px;
- }
-
- #work .work-img {
-   margin: 0 auto;
- }
-
+}
 
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
