@@ -413,7 +413,20 @@ Mobile Menu
   font-size: 40px;
 }
 
+#work .container{
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 25px;
 
+}
+
+#work .row {
+  padding: 25px;
+}
+
+/* #work .left {
+  margin-right: 50px;
+} */
 
 /* Form Section */
 /* Form */
