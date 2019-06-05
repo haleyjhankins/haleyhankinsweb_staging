@@ -794,6 +794,10 @@ Mobile Menu
 #form .section-title {
   font-size: 20px
 }
+#form p {
+  font-size: 15px;
+  line-height: 21px;
+}
 
   #form .name-input, #form .form-email input, #form .form-text-area textarea {
     width: 300px;
