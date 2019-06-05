@@ -786,26 +786,36 @@ Mobile Menu
     font-size: 20px;
     line-height: 26px;
   }
+
   #work h2 {
     margin-bottom: 19px;
     font-size: 15px;
     line-height: 21px;
-}
-#form {
-  padding: 30px 25px;
-}
-#form .section-title {
-  font-size: 20px
-}
-#form p {
-  font-size: 15px;
-  line-height: 21px;
-}
+  }
+
+  #form {
+    padding: 30px 25px;
+  }
+
+  #form .section-title {
+    font-size: 20px
+  }
+
+  #form p {
+    font-size: 12px;
+    line-height: 18px;
+  }
 
   #form .name-input, #form .form-email input, #form .form-text-area textarea {
     width: 238px;
   }
+
+  #form .cta-section, .modal {
+    text-align: center;
+    margin: 30px auto 0;
+  }
+
   #form .btn-primary, .modal {
     font-size: 12px;
-}
+  }
 }
