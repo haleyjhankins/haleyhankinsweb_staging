@@ -730,6 +730,9 @@ font-family: 'Lora', serif;
  }
 
 @media (max-width: 375px) {
+  #hero {
+    height: 667px;
+}
   #hero h1 {
     margin-top: 355px;
     font-size: 40px;
@@ -756,16 +759,19 @@ font-family: 'Lora', serif;
 
   #footer .footer-links {
     margin-left: 10px;
-    padding: 20px 15px;
+  }
+
+  #footer .footer-links a {
+    letter-spacing: 1rem;
   }
 
   #footer .Copyright {
     font-size: 8px;
     letter-spacing: 1px;
     line-height: 12px;
+    padding: 10px 15px;
   }
 }
-
 
 
 
