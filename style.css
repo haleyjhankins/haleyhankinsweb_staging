@@ -786,6 +786,14 @@ Mobile Menu
     font-size: 20px;
     line-height: 26px;
   }
+  #work h2 {
+    margin-bottom: 19px;
+    font-size: 15px;
+    line-height: 21px;
+}
+#form .section-title {
+  font-size: 20px
+}
 
   #form .name-input, #form .form-email input, #form .form-text-area textarea {
     width: 300px;
