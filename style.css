@@ -733,35 +733,37 @@ font-family: 'Lora', serif;
   #hero h1 {
     margin-top: 355px;
     font-size: 40px;
-}
-#about .box {
+  }
+
+  #about .box {
     max-height: 350px;
-}
-#about h1 {
+  }
+
+  #about h1 {
     font-size: 23px;
     line-height: 29px;
-}
-#work h2 {
+  }
+
+  #work h2 {
     margin-bottom: 20px;
-    font-size: 200px;
+    font-size: 20px;
     line-height: 26px;
-}
-#form h1 {
-  font-size: 23px;
-}
+  }
+
+  #form h1 {
+    font-size: 23px;
+  }
 
   #footer .footer-links {
-      padding: 20px 15px;
-    }
-    #footer .footer-links {
-    letter-spacing: 2rem;
     margin-left: 10px;
-}
-#footer .Copyright {
+    padding: 20px 15px;
+  }
+
+  #footer .Copyright {
     font-size: 8px;
     letter-spacing: 1px;
     line-height: 12px;
-}
+  }
 }
 
 
