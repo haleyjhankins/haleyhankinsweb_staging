@@ -791,6 +791,9 @@ Mobile Menu
     font-size: 15px;
     line-height: 21px;
 }
+#form {
+  padding: 30px 25px;
+}
 #form .section-title {
   font-size: 20px
 }
