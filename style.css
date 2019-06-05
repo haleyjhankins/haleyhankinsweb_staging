@@ -803,6 +803,9 @@ Mobile Menu
 }
 
   #form .name-input, #form .form-email input, #form .form-text-area textarea {
-    width: 300px;
+    width: 238px;
   }
+  #form .btn-primary, .modal {
+    font-size: 12px;
+}
 }
