@@ -756,6 +756,9 @@ font-family: 'Lora', serif;
   #form h1 {
     font-size: 23px;
   }
+  #form .btn-primary, .modal {
+    font-size: 14px;
+  }
 
   #footer .footer-links {
     margin-left: 10px;
@@ -769,7 +772,7 @@ font-family: 'Lora', serif;
     font-size: 8px;
     letter-spacing: 1px;
     line-height: 12px;
-    padding: 10px 15px;
+    padding: 10px 15px!important;
   }
 }
 
