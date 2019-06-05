@@ -3,7 +3,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,35 +23,40 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
+
 blockquote, q {
   quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/* END CSS Reset */
 
+/* END CSS Reset */
 /****************
  Announcement
 ****************/
-
 .announcement-bar {
   text-align: center;
   background-color: #000000;
@@ -65,13 +69,11 @@ table {
 
 .announcement-bar-wrapper p {
   font-family: "Montserrat", helvetica, sans-serif;
-
 }
 
 /****************
  Navigation
 ****************/
-
 #nav .container {
   max-width: 1616px;
 }
@@ -119,7 +121,6 @@ table {
   height: 60px;
 }
 
-
 .nav-link {
   font-size: 15px;
   color: #fff;
@@ -129,9 +130,8 @@ table {
   padding-bottom: 8px;
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 3px;
-  padding-right: 2.5rem!important;
+  padding-right: 2.5rem !important;
 }
-
 
 /* .nav-link:after,
 .nav-link:before {
@@ -145,7 +145,6 @@ table {
   width: 100px;
   margin: 0 auto;
 } */
-
 a:before {
   opacity: 0;
   -webkit-transform: translateY(-8px);
@@ -190,12 +189,12 @@ a:hover:after {
   color: #000;
 }
 
-
 @media screen and (max-width:767px) {
   .navbar {
     display: none !important;
   }
 }
+
 /****************
 Mobile Menu
 ****************/
@@ -204,6 +203,7 @@ Mobile Menu
     display: none;
   }
 }
+
 @media screen and (max-width:767px) {
   input#burger {
     display: none;
@@ -285,7 +285,7 @@ Mobile Menu
     position: relative;
   }
 
-  .mobile-menu input~nav > ul {
+  .mobile-menu input~nav>ul {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -299,13 +299,13 @@ Mobile Menu
     width: 80%;
   }
 
-  .mobile-menu input~nav > ul > li {
+  .mobile-menu input~nav>ul>li {
     opacity: 0;
     /* transition: ease .3s; */
     /* transition-delay: 0s; */
   }
 
-  .mobile-menu input~nav > ul > li > a {
+  .mobile-menu input~nav>ul>li>a {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -315,7 +315,7 @@ Mobile Menu
     font-size: 25px;
   }
 
-  .mobile-menu input~nav > ul > li > a {
+  .mobile-menu input~nav>ul>li>a {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 400;
@@ -334,7 +334,7 @@ Mobile Menu
     list-style: none;
   }
 
-  .mobile-menu input:checked~nav > ul > li {
+  .mobile-menu input:checked~nav>ul>li {
     opacity: 1;
   }
 
@@ -346,17 +346,18 @@ Mobile Menu
     padding: 6px;
   }
 }
+
 @media screen and (max-width:575px) {
-  .mobile-menu input~nav > ul > li > a {
+  .mobile-menu input~nav>ul>li>a {
     font-size: 18px;
     color: white;
   }
 }
+
 /* @media screen and (max-width:450px) {
 
 } */
 /* End of Navigation */
-
 /* Hero Section */
 #hero {
   height: 900px;
@@ -367,11 +368,9 @@ Mobile Menu
   background-attachment: fixed;
   position: relative;
   margin-top: -100px;
-
 }
 
-
-#hero h1{
+#hero h1 {
   text-align: center;
   z-index: 10;
   margin-top: 330px;
@@ -382,7 +381,6 @@ Mobile Menu
   text-transform: uppercase;
   /* color: #fff; */
 }
-
 
 /* About Section */
 #about {
@@ -413,11 +411,10 @@ Mobile Menu
   font-size: 40px;
 }
 
-#work .container{
+#work .container {
   margin: 0 auto;
   text-align: center;
   padding: 50px 25px;
-
 }
 
 #work .row {
@@ -433,7 +430,6 @@ Mobile Menu
 /* #work .left {
   margin-right: 50px;
 } */
-
 /* Form Section */
 /* Form */
 #form {
@@ -453,8 +449,8 @@ Mobile Menu
   /* text-transform: uppercase; */
 }
 
-#form p , .modal {
-font-family: 'Lora', serif;
+#form p, .modal {
+  font-family: 'Lora', serif;
   // font-size: 20px;
   color: #333333;
   font-weight: 400;
@@ -467,18 +463,18 @@ font-family: 'Lora', serif;
   border: 1px solid #ababab;
 }
 
-#form .form-email input , .modal {
+#form .form-email input, .modal {
   width: 400px;
   margin-bottom: 5px;
   border: 1px solid #ababab;
 }
 
-#form .form-text-area textarea , .modal {
+#form .form-text-area textarea, .modal {
   width: 400px;
   border: 1px solid #ababab;
 }
 
-#form .cta-section , .modal {
+#form .cta-section, .modal {
   text-align: center;
   margin: 50px auto 0;
 }
@@ -495,8 +491,6 @@ font-family: 'Lora', serif;
   cursor: pointer;
   border-radius: 0.25rem;
 }
-
-
 
 /* Footer Section */
 #footer {
@@ -521,7 +515,7 @@ font-family: 'Lora', serif;
   // font-size: 18px;
   vertical-align: top;
   color: #EDF8FC;
-  border-top: 1px solid rgba(237,248,252,0.1);
+  border-top: 1px solid rgba(237, 248, 252, 0.1);
   font-weight: 300;
   padding: 30px;
   text-align: center;
@@ -552,7 +546,6 @@ font-family: 'Lora', serif;
   /* margin-right: 16px; */
 }
 
-
 #footer .Copyright {
   text-align: center;
   color: white;
@@ -568,7 +561,6 @@ font-family: 'Lora', serif;
 }
 
 /* PT Page CSS */
-
 #pt-hero {
   height: 900px;
   background-image: url("img/pt-devices.png");
@@ -580,7 +572,7 @@ font-family: 'Lora', serif;
   margin-top: -100px;
 }
 
-#pt-hero h1{
+#pt-hero h1 {
   text-align: center;
   z-index: 10;
   margin-top: 330px;
@@ -592,8 +584,7 @@ font-family: 'Lora', serif;
   display: inline-block;
 }
 
-#about {
-}
+#about {}
 
 #about .work-box {
   max-height: 300px;
@@ -628,43 +619,41 @@ font-family: 'Lora', serif;
   height: 500px;
 }
 
-#mobile-display .phone-div  {
+#mobile-display .phone-div {
   text-align: center;
   margin: 0 auto;
 }
 
-
 /* Media Queries */
-
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-
-
-
-}
+@media (max-width: 992px) {}
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 60px;
   }
+
   #about h1 {
     text-align: center;
     line-height: 46px;
   }
+
   #work .container {
     padding: 30px 25px;
   }
+
   #work .row {
     padding: 10px;
   }
+
   #work img {
     margin-bottom: 20px;
   }
+
   #work h2 {
     margin-bottom: 20px;
   }
-
 }
 
 @media (max-width: 600px) {
@@ -681,58 +670,68 @@ font-family: 'Lora', serif;
     margin-bottom: 25px;
     width: 80%;
   }
+
   #footer .footer-div {
     display: block;
     margin: 0 auto;
     text-align: center;
   }
+
   #footer .footer-links {
     padding: 30px 15px;
     text-align: center;
     margin: 0 auto;
   }
+
   .footer-links a {
     margin-right: 0;
     text-align: center;
   }
 }
 
- /* Small devices (landscape phones, 576px and up) */
+/* Small devices (landscape phones, 576px and up) */
 @media (max-width: 414px) {
   .navbar-brand {
     padding: 6px;
   }
+
   .mobile-menu .navbar-brand img {
     height: 45px;
   }
+
   #hero {
     height: 736px;
   }
+
   #hero h1 {
     margin-top: 320px;
     font-size: 45px;
-}
-#about .box{
-  max-height: 400px
-}
-#about h1 {
-  font-size: 25px;
-  line-height: 30px;
-}
-#form h1 {
-  font-size: 25px;
-  line-height: 30px;
-}
-#form .name-input, #form .form-email input, #form .form-text-area textarea {
-  width: 350px;
-}
+  }
 
- }
+  #about .box {
+    max-height: 400px
+  }
+
+  #about h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  #form h1 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  #form .name-input, #form .form-email input, #form .form-text-area textarea {
+    width: 350px;
+  }
+}
 
 @media (max-width: 375px) {
   #hero {
     height: 667px;
-}
+  }
+
   #hero h1 {
     margin-top: 355px;
     font-size: 40px;
@@ -756,6 +755,7 @@ font-family: 'Lora', serif;
   #form h1 {
     font-size: 23px;
   }
+
   #form .btn-primary, .modal {
     font-size: 14px;
   }
@@ -772,11 +772,22 @@ font-family: 'Lora', serif;
     font-size: 8px;
     letter-spacing: 1px;
     line-height: 12px;
-    padding: 10px 15px!important;
+    padding: 10px 15px !important;
   }
 }
 
+@media (max-width: 320px) {
+  #hero h1 {
+    margin-top: 236px;
+    font-size: 34px;
+  }
 
+  #about h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
 
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+  #form .name-input, #form .form-email input, #form .form-text-area textarea {
+    width: 300px;
+  }
+}
