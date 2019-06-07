@@ -650,7 +650,7 @@ Mobile Menu
 @media (max-width: 768px) {
   .navbar-brand img {
     height: 50px;
-    position: fixed;
+    /* position: fixed; */
 }
   #hero h1 {
     font-size: 60px;
