@@ -480,7 +480,7 @@ Mobile Menu
   margin: 50px auto 0;
 }
 
-#form .btn-primary, .modal {
+.btn-primary, .modal {
   background-color: #a39067;
   border: none;
   color: #fff;
@@ -491,6 +491,11 @@ Mobile Menu
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 0.25rem;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #a09682;
+    border-color: #a09682;
 }
 
 /* Footer Section */
@@ -598,9 +603,10 @@ Mobile Menu
 }
 
 /* 5tips Page CSS */
-.navbar-expand-md .navbar-nav .nav-link {
-  color: #000;
+#fivetips-nav {
+  nav
 }
+
 #fivetips-hero {
   height: 500px;
   background-image: url("img/cg-devices.png");
@@ -611,9 +617,28 @@ Mobile Menu
   position: relative;
   margin-top: -130px;
 }
+#about .cta-section {
+  text-align: center;
+  margin-top: -100px;
+}
+#about .cta-box {
+  background-color: #252525;
+}
 
-#mobile-display {
-
+#about .cta-box a {
+  color: #fff;
+  text-decoration: none;
+}
+/* 5Dates Page CSS */
+#fivedates-hero {
+  height: 500px;
+  background-image: url("img/5-dates.png");
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  margin-top: -130px;
 }
 
 
@@ -697,6 +722,9 @@ Mobile Menu
   #mobile-display img {
     zoom: 75%;
   }
+  #fivedates-hero {
+    margin-top: -200px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -743,6 +771,9 @@ Mobile Menu
 }
   #mobile-display img {
     zoom: 50%;
+}
+#fivedates-hero {
+    margin-top: -296px;
 }
 }
 
