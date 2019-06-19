@@ -1,33 +1,40 @@
-// Vanilla JavaScript Scroll to Anchor
-(function() {
-  scrollTo();
-})();
+$(document).ready(() => {
+  // Offset Fixed Navigation
+  $('.nav-link, .mobile-links a, .btn-prime').click((e) => {
+    const linkTarget = $(e.currentTarget).attr('href');
 
-function scrollTo() {
-  var links = document.getElementsByTagName('a');
-  for (var i = 0; i < links.length; i++) {
-    var link = links[i];
-    if ((link.href && link.href.indexOf('#') != -1) && ((link.pathname == location.pathname) || ('/' + link.pathname == location.pathname)) && (link.search == location.search)) {
-      link.onclick = scrollAnchors;
+    if (linkTarget === '#' || linkTarget.charAt(0) !== '#') {
+      return;
     }
-  }
-}
+    e.preventDefault();
 
-function scrollAnchors(e, respond = null) {
-  const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-  e.preventDefault();
-  var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-  const targetAnchor = document.querySelector(targetID);
-  if (!targetAnchor) return;
-  const originalTop = distanceToTop(targetAnchor);
-  window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-  const checkIfDone = setInterval(function() {
-    const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-    if (distanceToTop(targetAnchor) === 0 || atBottom) {
-      targetAnchor.tabIndex = '-1';
-      targetAnchor.focus();
-      window.history.pushState('', '', targetID);
-      clearInterval(checkIfDone);
+    let topOffset = $(linkTarget).offset().top;
+    let navContainer = '.fixed-top';
+    if ($('.mobile-nav').is(':visible')) {
+      if ($('#burger').is(':checked')) {
+        navContainer = '.mobile-menu input~nav';
+        $('#burger').trigger('click');
+      }
     }
-  }, 100);
-}
+
+    topOffset -= $(navContainer).height();
+
+    $('html, body').animate({
+      scrollTop: topOffset,
+    }, 900);
+  });
+
+
+
+  // Slick Slider
+  $('.your-class').slick();
+
+  // Wheel Click Modal
+  $('button.btn-prime').on('mousedown', (e) => {
+    if (e.which === 2) {
+      e.preventDefault();
+      e.stopPropagation();
+      $(e.currentTarget).trigger('click');
+    }
+  });
+});

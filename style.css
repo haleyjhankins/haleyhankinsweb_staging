@@ -3,6 +3,12 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html, body {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -82,7 +88,6 @@ table {
   background-color: transparent;
   border: none;
   color: white;
-  z-index: 100;
   height: 100px;
   z-index: 20;
 }
@@ -361,13 +366,15 @@ Mobile Menu
 /* Hero Section */
 #hero {
   height: 900px;
-  background-image: url("img/me-overlay-30.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   margin-top: -100px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 #hero h1 {
@@ -409,6 +416,15 @@ Mobile Menu
   color: white;
   font-family: 'Lora', serif;
   font-size: 40px;
+}
+#work h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Lora', serif;
+  font-size: 35px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  color: #000;
 }
 
 #work .container {
@@ -492,10 +508,11 @@ Mobile Menu
   cursor: pointer;
   border-radius: 0.25rem;
 }
+
 .btn-primary:hover {
-    color: #fff;
-    background-color: #a09682;
-    border-color: #a09682;
+  color: #fff;
+  background-color: #a09682;
+  border-color: #a09682;
 }
 
 /* Footer Section */
@@ -527,18 +544,6 @@ Mobile Menu
   text-align: center;
 }
 
-#footer .far.fa-envelope {
-  margin-right: 10px;
-}
-
-#footer .fab.fa-github {
-  margin-right: 10px;
-}
-
-#footer .fab.fa-linkedin-in {
-  margin-right: 10px;
-}
-
 .footer-links a {
   color: #EDF8FC;
   height: 40px;
@@ -564,6 +569,18 @@ Mobile Menu
   letter-spacing: 3px;
   font-weight: 400;
   padding-top: 45px;
+}
+
+/* About Me CSS */
+#about-hero .home-banner__col-image.js-home-banner-col-image {
+  opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+    height: 99.987%;
+}
+.home-banner__image.js-home-banner-image.lazy {
+  background-image: url("https://www.everess.fr/images/home/everess-home-banner-2.jpg");
+    height: 609.93px;
+    transform: translate(0%, 0.0130463%) translate3d(0px, 0px, 0px);
 }
 
 /* PT Page CSS */
@@ -594,7 +611,6 @@ Mobile Menu
   background-color: #F8F8F8;
   height: 500px;
   padding: 30px 25px;
-
 }
 
 #mobile-display .phone-div {
@@ -617,10 +633,12 @@ Mobile Menu
   position: relative;
   margin-top: -130px;
 }
+
 #about .cta-section {
   text-align: center;
   margin-top: -100px;
 }
+
 #about .cta-box {
   background-color: #252525;
 }
@@ -629,6 +647,7 @@ Mobile Menu
   color: #fff;
   text-decoration: none;
 }
+
 /* 5Dates Page CSS */
 #fivedates-hero {
   height: 500px;
@@ -641,249 +660,214 @@ Mobile Menu
   margin-top: -130px;
 }
 
-
 /* Media Queries */
-/* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {}
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-  .navbar-brand img {
-    height: 50px;
-    /* position: fixed; */
-}
+
+@media only screen and (min-width: 321px) {
   #hero h1 {
-    font-size: 60px;
+    font-size: 43px;
   }
-
   #about h1 {
+    font-size: 19px;
+    line-height: 25px;
     text-align: center;
-    line-height: 46px;
+}
+#about .box {
+  max-height: 400px;
+}
+#work .container {
+    padding: 35px 0;
   }
+#work h1 {
+  font-size: 25px;
+}
+#work img {
+  zoom: 50%;
+}
+#work h2 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  line-height: 21px;
+}
+#form {
+   padding: 35px 0;
+ }
+ #form .section-title {
+   font-size: 20px;
+ }
+ #form p {
+   font-size: 15px;
+   line-height: 21px;
+ }
 
-  #work .container {
-    padding: 30px 25px;
-  }
+ #form .name-input, .modal {
+   width: 230px;
+ }
 
-  #work .row {
-    padding: 10px;
-  }
+ #form .form-email input, .modal {
+   width: 230px;
+ }
 
-  #work img {
-    margin-bottom: 20px;
-  }
+ #form .form-text-area textarea, .modal {
+   width: 230px;
+ }
 
-  #work h2 {
-    margin-bottom: 20px;
-  }
   #mobile-display {
-    height: 400px;
+    height: 286px;
+    padding: 30px 0px;
   }
-
   #mobile-display img {
-    zoom: 80%;
+    zoom: 45%;
   }
-}
+  #footer .footer-links{
+    padding: 35px 0;
 
-@media (max-width: 600px) {
-  #hero h1 {
-    margin-top: 395px;
-    font-size: 50px;
   }
-
-  #about h1 {
-    font-size: 35px;
-  }
-
-  #work img {
-    margin-bottom: 25px;
-    width: 80%;
-  }
-
-  #footer .footer-div {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  #footer .footer-links {
-    padding: 30px 15px;
-    text-align: center;
-    margin: 0 auto;
-  }
-
   .footer-links a {
-    margin-right: 0;
-    text-align: center;
+        letter-spacing: 31px;
   }
-  #pt-hero {
-    margin-top: -210px;
+  #footer .Copyright {
+    padding-top: 25px;
+    line-height: 15px;
   }
-  #mobile-display img {
-    zoom: 75%;
-  }
-  #fivedates-hero {
-    margin-top: -200px;
-  }
+
+
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 414px) {
-  .navbar-brand {
-    padding: 6px;
-  }
-
-  .mobile-menu .navbar-brand img {
-    height: 45px;
-  }
-
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
   #hero {
-    height: 736px;
+    background-image: url("img/me-mobile.png");
+    background-size: contain;
+    margin-bottom: 0px;
+    height: 700px;
+  }
+  #pt-hero,#fivedates-hero,#fivetips-hero {
+    height: 330px;
   }
 
-  #hero h1 {
-    margin-top: 320px;
-    font-size: 45px;
-  }
-
-  #about .box {
-    max-height: 400px
-  }
-
-  #about h1 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  #form h1 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  #form .name-input, #form .form-email input, #form .form-text-area textarea {
-    width: 350px;
-  }
-  #pt-hero {
-    margin-top: -299px;
-  }
-  #fivetips-hero {
-      margin-top: -296px;
-  }
-  #mobile-display {
-    height: 300px;
 }
-  #mobile-display img {
-    zoom: 50%;
-}
-#fivedates-hero {
-    margin-top: -296px;
-}
-}
-
-@media (max-width: 375px) {
+@media only screen and (max-width: 320px) {
   #hero {
-    height: 667px;
+    height: 565px;
   }
-
   #hero h1 {
-    margin-top: 355px;
-    font-size: 40px;
+    font-size: 55px;
+    margin-top: 235px;
   }
-
   #about .box {
     max-height: 350px;
   }
-
-  #about h1 {
-    font-size: 23px;
-    line-height: 29px;
-  }
-
-  #work h2 {
-    margin-bottom: 20px;
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  #form .section-title {
-    font-size: 23px;
-  }
-  #form p {
-    font-size: 14px;
-  }
-
-  #form .btn-primary, .modal {
-    font-size: 14px;
-  }
-
-  #footer .footer-links {
-    margin-left: 10px;
-  }
-
-  #footer .footer-links a {
-    letter-spacing: 1rem;
-  }
-
-  #footer .Copyright {
-    font-size: 8px;
-    letter-spacing: 1px;
-    line-height: 12px;
-    padding: 10px 15px !important;
-  }
-  #pt-hero {
-    margin-top: -320px;
-  }
-}
-
-@media (max-width: 320px) {
-  #hero h1 {
-    margin-top: 280px;
-    font-size: 34px;
-  }
-
   #about h1 {
     font-size: 20px;
     line-height: 26px;
+    text-align: center;
   }
-
+  #work h1 {
+    font-size: 25px;
+  }
   #work h2 {
-    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 21px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+  #work img {
+    zoom: 50%;
+  }
+  #pt-hero {
+    height: 284px;
+  }
+  #form .section-title {
+    font-size: 25px;
+  }
+  #form p {
     font-size: 15px;
     line-height: 21px;
   }
+  #form .name-input, .modal {
+    width: 290px;
+}
+#form .form-email input, .modal {
+  width: 290px;
+}
+#form .form-text-area textarea, .modal {
+  width: 290px;
+}
+#footer .footer-links {
+  padding: 65px 0;
+}
+.footer-links a {
+  letter-spacing: 32px;
+}
+#footer .Copyright {
+  line-height: 16px;
+  padding-top: 0;
+}
+}
 
-  #form {
-    padding: 30px 25px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  #hero {
+    background-image: url("img/me-overlay-30.jpg");
+    height: 1022px;
+    /* background-size: contain;
+    margin-bottom: 0px;
+    height: 700px; */
   }
-
-  #form .section-title {
-    font-size: 20px
+  #hero h1 {
+    font-size: 60px;
+    margin-top: 363px;
+}
+#about h1 {
+    font-size: 30px;
+    line-height: 36px;
   }
+  #work img {
+    zoom: 65%;
+}
+#work .row {
+  padding: 0;
+}
+#work h1 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+#work h2 {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#form .section-title {
+  font-size: 30px;
+}
+#form .name-input, .modal {
+  width: 50%;
+}
 
-  #form p {
-    font-size: 12px;
-    line-height: 18px;
-  }
+#form .form-email input, .modal {
+  width: 50%;
+}
 
-  #form .name-input, #form .form-email input, #form .form-text-area textarea {
-    width: 238px;
-  }
+#form .form-text-area textarea, .modal {
+  width: 50%;
+}
+#pt-hero {
+  height: 423px;
+}
+}
 
-  #form .cta-section, .modal {
-    text-align: center;
-    margin: 30px auto 0;
-  }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
 
-  #form .btn-primary, .modal {
-    font-size: 12px;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #hero h1 {
+    font-size: 100px;
   }
   #pt-hero {
-    margin-top: -345px;
+    height: 563px;
+  }
 }
-#mobile-display {
-    height: 245px;
-}
-#mobile-display img {
-    zoom: 40%;
-}
-}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
