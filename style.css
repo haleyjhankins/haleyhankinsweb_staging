@@ -572,16 +572,7 @@ Mobile Menu
 }
 
 /* About Me CSS */
-#about-hero .home-banner__col-image.js-home-banner-col-image {
-  opacity: 1;
-    transform: translate3d(0px, 0px, 0px);
-    height: 99.987%;
-}
-.home-banner__image.js-home-banner-image.lazy {
-  background-image: url("https://www.everess.fr/images/home/everess-home-banner-2.jpg");
-    height: 609.93px;
-    transform: translate(0%, 0.0130463%) translate3d(0px, 0px, 0px);
-}
+
 
 /* PT Page CSS */
 #pt-hero {
@@ -810,14 +801,14 @@ Mobile Menu
 @media only screen and (min-width: 601px) {
   #hero {
     background-image: url("img/me-overlay-30.jpg");
-    height: 1022px;
+    height: 1011px;
     /* background-size: contain;
     margin-bottom: 0px;
     height: 700px; */
   }
   #hero h1 {
     font-size: 60px;
-    margin-top: 363px;
+    margin-top: 428px;
 }
 #about h1 {
     font-size: 30px;
