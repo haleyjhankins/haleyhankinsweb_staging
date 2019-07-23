@@ -9,7 +9,7 @@ Main JS
 
     var cfg = {
         scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : 'https://mail.google.com/mail/u/1/?tab=wm#inbox'   // mailchimp url
+        mailChimpURL   : 'https://haleyhankinsweb.us19.list-manage.com/subscribe/post?u=ad9773a30bce5ffd4a3f065d6&amp;id=a19cd1cdae'   // mailchimp url
     },
 
     $WIN = $(window);
