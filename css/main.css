@@ -2519,6 +2519,7 @@ html.no-csstransitions .home-content__main {
 
 .masonry .grid-sizer, .masonry__brick {
     width: 50%;
+    outline: .5px solid rgba(117, 117, 117, .1);
 }
 
 .masonry__brick {
